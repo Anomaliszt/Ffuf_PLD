@@ -25,7 +25,7 @@ Then ffuf checks which paths or names exist.
 ## Example use
 
 ```bash
-ffuf -u http://example.com/FUZZ -w wordlist.txt
+ffuf -u http://example.com/FUZZ -w directory_list-DLH.txt
 ```
 
 ## Extension fuzzing example
@@ -33,7 +33,7 @@ ffuf -u http://example.com/FUZZ -w wordlist.txt
 You can also use ffuf to fuzz file extensions:
 
 ```bash
-ffuf -u http://example.com/indexFUZZ -w wordlist.txt
+ffuf -u http://example.com/indexFUZZ -w web_extensions-DLH.txt
 ```
 
 This will try values from the wordlist with the extensions diffrent extensions like `.php`, `.txt`,`.html`, etc. 
@@ -43,7 +43,7 @@ This will try values from the wordlist with the extensions diffrent extensions l
 ffuf can also be used recursively to search deeper into discovered directories:
 
 ```bash
-ffuf -u http://example.com/FUZZ -w wordlist.txt -recursion -recursion-depth 1
+ffuf -u http://example.com/FUZZ -w directory_list-DLH.txt -recursion -recursion-depth 1
 ```
 
 This makes ffuf continue fuzzing inside paths it finds.
