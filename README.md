@@ -63,7 +63,7 @@ echo "<IP> academy.htb" | sudo tee -a /etc/hosts
 ## RESOURCES
 
 ### 1) Subdomain / virtual host fuzzing
-A **subdomain** is a name that lives under a main domain, like `faculty.academy.htb`. A **virtual host** is a website served from the same IP address but identified using the `Host` header.  
+A **subdomain** is a name that lives under a main domain, like `love.academy.htb`. A **virtual host** is a website served from the same IP address but identified using the `Host` header.  
 This scan is used to discover hidden sites that point to the same server.
 
 Important concepts:
